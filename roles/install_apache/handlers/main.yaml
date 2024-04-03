@@ -1,0 +1,12 @@
+---
+- name: Restart Apache2
+  service:
+    name: "{{ apache_service }}"
+    state: restarted 
+  when: ansible_os_family == 'Debian'
+
+- name: Start Apache service
+  service:
+    name: "{{ httpd_service }}"
+    state: started
+  when: ansible_os_family == 'RedHat'
