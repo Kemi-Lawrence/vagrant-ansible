@@ -4,7 +4,7 @@
 ### Encountered a network issue which is caused my ip address conflict and I had to change ip address and allocate different ip addresses for my master and other two slave servers.
 
 ## Step 2
-### vagrant up, after all my machines were successfully running, I had to vagrant ssh into my master server (vm1)
+### vagrant up, after all my machines were successfully running, I had to `vagrant ssh vm1` into my master server (vm1)
 ![vm1](images/vm1.png)
 
 
@@ -29,20 +29,20 @@
 
 
 ## Step 6
-### On my master server, cd roles and have a folder called install_apached where I created four files which embodied tasks, handles, vars, and a clone repo from my github.
+### On my master server, `cd roles` and have a folder called install_apached where I created four files which embodied tasks, handles, vars, and a clone repo from my github.
 
 ![roles](images/cd%20roles%20and%20ls%20items.png)
 
 
 ## Step 7
-### On my master server, cd tasks then created a main.yaml file where I have my instruction of basic tasks I need it to run such as install apache2 if ansible_os_family is Debian or install httpd_service if ansible_os_family is Redhat.
+### On my master server, `cd tasks` then created a main.yaml file where I have my instruction of basic tasks I need it to run such as install apache2 if ansible_os_family is Debian or install httpd_service if ansible_os_family is Redhat.
 
 ![tasks](images/tasks.png)
 
 
 
 ## Step 8
-### On my master server, cd handlers then created a main.yaml file where I have my instruction similar to tasks but I want it to `restart apache2 if ansible_os_family is Debian or start httpd_service if ansible_os_family is Redhat.
+### On my master server, `cd handlers` then created a main.yaml file where I have my instruction similar to tasks but I want it to `restart apache2 if ansible_os_family is Debian or start httpd_service if ansible_os_family is Redhat.
 
 ![handlers](images/cd%20handlers.png)
 
