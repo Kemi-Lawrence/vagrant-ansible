@@ -56,10 +56,10 @@
 ## Step 10
 ### On my master server, `cd setupapache.yaml` which shows the instruction of setting up the Apache serevr.
 
-![vars](images/setupapacahe-yaml.png)
+![setupapache.yaml](images/setupapacahe-yaml.png)
 
 
 
 ## Step 11
 ### On my master server, `cd ansible` directory, I had to check if my ansible playbook is running with no error or failure rate using the `ansible-playbook -i host_inventory setupapache.yaml` command to check.
-![vars](images/ansible-playbook.png)
+![ansible-playbook](images/ansible-playbook.png)
